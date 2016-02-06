@@ -11,7 +11,7 @@ sudo apt-get install transmission-daemon -y
 sudo service transmission-daemon stop
 ```
 
-# copy settings file and replace username and password
+# copy settings file and set the username and password and change download / complete dirs
 ```
 cd /etc/transmission-daemon
 ```
