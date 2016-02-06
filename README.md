@@ -11,7 +11,7 @@ sudo apt-get install transmission-daemon -y
 sudo service transmission-daemon stop
 ```
 
-#Copy settings file
+# copy settings file
 ```
 cd /etc/transmission-daemon
 ```
@@ -21,20 +21,20 @@ sudo wget https://raw.githubusercontent.com/bicklp/transmission-setup/master/set
 ```
 sudo nano /etc/transmission-daemon/settings.json
 ```
-#add own username by replacing debian-transmission
+# add own username by replacing debian-transmission
 ```
 sudo nano /etc/init.d/transmission-daemon
 ```
-#this is need to get permission to NAS
+# this is need to get permission to NAS
 
-#take ownership of the files
+# take ownership of the files
 ```
 sudo chown bicklp:bicklp -R /etc/transmission-daemon
 ```
 ```
 sudo chown bicklp:bicklp -R /var/lib/transmission-daemon
 ```
-#update the service to start delayed
+# update the service to start delayed
 ```
 sudo update-rc.d transmission-daemon defaults 92
 ```
