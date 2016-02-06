@@ -11,7 +11,7 @@ sudo apt-get install transmission-daemon -y
 sudo service transmission-daemon stop
 ```
 
-# copy settings file
+# copy settings file and replace username and password
 ```
 cd /etc/transmission-daemon
 ```
@@ -21,12 +21,10 @@ sudo wget https://raw.githubusercontent.com/bicklp/transmission-setup/master/set
 ```
 sudo nano /etc/transmission-daemon/settings.json
 ```
-# add own username by replacing debian-transmission
+# edit the daemon file and replace transmission-daemon user with your own username
 ```
 sudo nano /etc/init.d/transmission-daemon
 ```
-# this is need to get permission to NAS
-
 # take ownership of the files
 ```
 sudo chown bicklp:bicklp -R /etc/transmission-daemon
