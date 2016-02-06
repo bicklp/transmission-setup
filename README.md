@@ -7,17 +7,17 @@ sudo apt-get install transmission-daemon -y
 sudo service transmission-daemon stop
 ```
 
-# copy settings file and set the username and password and change download / complete dirs
+### copy settings file and set the username and password and change download / complete dirs
 ```
 cd /etc/transmission-daemon
 sudo wget https://raw.githubusercontent.com/bicklp/transmission-setup/master/settings.json
 sudo nano /etc/transmission-daemon/settings.json
 ```
-# edit the daemon file and replace 'transmission-daemon' user with your own username
+### edit the daemon file and replace 'transmission-daemon' user with your own username
 ```
 sudo nano /etc/init.d/transmission-daemon
 ```
-# take ownership of the files
+### take ownership of the files
 ```
 sudo chown bicklp:bicklp -R /etc/transmission-daemon
 sudo chown bicklp:bicklp -R /var/lib/transmission-daemon
