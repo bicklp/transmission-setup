@@ -8,8 +8,7 @@ sudo service transmission-daemon stop
 
 #Copy settings file
 cd /etc/transmission-daemon
-wget 
-sudo cp /nas/files/Linux/transmission/settings.json /etc/transmission-daemon/
+sudo wget https://raw.githubusercontent.com/bicklp/transmission-setup/master/settings.json
 
 sudo nano /etc/transmission-daemon/settings.json
 
