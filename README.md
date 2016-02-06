@@ -9,7 +9,7 @@ sudo service transmission-daemon stop
 ```
 
 ## get and edit the settings file
->set the username and password and change download / complete dirs
+- set the username and password and change download / complete dirs
 
 ```
 cd /etc/transmission-daemon
@@ -17,7 +17,7 @@ sudo wget https://raw.githubusercontent.com/bicklp/transmission-setup/master/set
 sudo nano /etc/transmission-daemon/settings.json
 ```
 ## edit the daemon file
->replace 'transmission-daemon' user with your own username
+- replace 'transmission-daemon' user with your own username
 
 ```
 sudo nano /etc/init.d/transmission-daemon
