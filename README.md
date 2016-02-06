@@ -27,7 +27,7 @@ sudo nano /etc/init.d/transmission-daemon
 sudo chown bicklp:bicklp -R /etc/transmission-daemon
 sudo chown bicklp:bicklp -R /var/lib/transmission-daemon
 ```
-# update the service to start delayed
+## update the service to start delayed
 ```
 sudo update-rc.d transmission-daemon defaults 92
 sudo service transmission-daemon start
