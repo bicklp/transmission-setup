@@ -21,7 +21,7 @@ sudo wget https://raw.githubusercontent.com/bicklp/transmission-setup/master/set
 ```
 sudo nano /etc/transmission-daemon/settings.json
 ```
-# edit the daemon file and replace transmission-daemon user with your own username
+# edit the daemon file and replace 'transmission-daemon' user with your own username
 ```
 sudo nano /etc/init.d/transmission-daemon
 ```
